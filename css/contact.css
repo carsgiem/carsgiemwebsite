@@ -1,0 +1,40 @@
+.contact-icon{
+    font-size: 5em;
+    margin:.2em;
+    /*-webkit-animation: tremble .2s infinite linear;
+    -moz-animation: tremble .2s infinite linear;
+    -o-animation: tremble .2s infinite linear;
+    animation: tremble .2s infinite linear;
+*/}
+.contact-icon-container{
+    background-color: none;
+}
+.google-map{
+    padding: 1em;
+    background-color: black;
+    margin-bottom: 4em;
+}
+@-moz-keyframes tremble {
+    0%,100% { -moz-transform: rotate(0deg); }
+    25% { -moz-transform: rotate(3deg); }
+    50% { -moz-transform: rotate(0deg); }
+    75% { -moz-transform: rotate(-3deg); }
+}
+@-webkit-keyframes tremble {
+    0%,100% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(3deg); }
+    50% { -webkit-transform: rotate(0deg); }
+    75% { -webkit-transform: rotate(-3deg); }
+}
+@-o-keyframes tremble {
+    0%,100% { -0-transform: rotate(0deg); }
+    25% { -0-transform: rotate(3deg); }
+    50% { -0-transform: rotate(0deg); }
+    75% { -0-transform: rotate(-3deg); }
+}
+@keyframes tremble {
+    0%,100% {  transform: rotate(0deg); }
+    25% {  transform: rotate(3deg); }
+    50% {  transform: rotate(0deg); }
+    75% {  transform: rotate(-3deg); }
+}

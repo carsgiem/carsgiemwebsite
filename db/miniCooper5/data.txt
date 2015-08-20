@@ -1,0 +1,233 @@
+----
+lang=cat
+PREU:23.950
+lang=es
+PRECIO:23.950
+lang=en
+PRICE:23.950
+lang=fr
+PRIX:23.950
+
+
+
+----
+lang=cat
+KM:9.500
+lang=es
+KM:9.500
+lang=en
+KM:9.500
+lang=fr
+KM:9.500
+
+
+----
+lang=cat
+INTERIOR:Negre
+lang=es
+INTERIOR:Negro
+lang=en
+INTERIOR:Black
+lang=fr
+INTERIEUR:Noir
+
+
+----
+lang=cat
+ESTAT:Semi nou
+lang=es
+ESTADO:Semi nuevo
+lang=en
+STATE:Preowned
+lang=fr
+ÉTAT:Preowned
+
+
+----
+lang=cat
+ANY FABRICACIÓ:2014
+lang=es
+AÑO DE FABRICACIÓN:2014
+lang=en
+YEAR OF FABRICATION:2014
+lang=fr
+ANNÉE DE FABRICATION:2014
+
+
+----
+lang=cat
+TIPUS:Turisme
+lang=es
+TIPO:Turismo
+lang=en
+TYPE:Tourism
+lang=fr
+TYPE:Tourisme
+
+
+----
+lang=cat
+PRIMERA MATRICULACIÓ:09/2014
+lang=es
+PRIMERA MATRICULACIÓN:09/2014
+lang=en
+FIRST MATRICULATION:09/2014
+lang=fr
+PREMIÈRE IMMATRICULATION:09/2014
+
+
+----
+lang=cat
+MARCA:MINI
+lang=es
+MARCA:MINI
+lang=en
+BRAND:MINI
+lang=fr
+MARQUE:MINI
+
+
+----
+lang=cat
+PROPERA ITV:
+lang=es
+PRÓXIMA ITV:
+lang=en
+NEXT REVISION:
+lang=fr
+PROCHAINE REVISION:
+
+
+----
+lang=cat
+MODEL:COOPER 5 DOORS
+lang=es
+MODELO:COOPER 5 DOORS
+lang=en
+MODEL:COOPER 5 DOORS
+lang=fr
+MODÈLE:COOPER 5 DOORS
+
+
+----
+lang=cat
+DARRERA REVISIÓ:
+lang=es
+ULTIMA REVISIÓN:
+lang=en
+LAST REVISION:
+lang=fr
+DERNIÈRE REVISION:
+
+----
+lang=cat
+COMBUSTIBLE:Gasolina
+lang=es
+COMBUSTIBLE:Gasolina
+lang=en
+FUEL:Gasoline
+lang=fr
+COMBUSTIBLE:Essence
+
+
+----
+lang=cat
+PLACES:5
+lang=es
+PLAZAS:5
+lang=en
+SEATS:5
+lang=fr
+PLACES:5
+
+
+----
+lang=cat
+MOTOR:1.5c.c
+lang=es
+MOTOR:1.5c.c
+lang=en
+MOTOR:1.5c.c
+lang=fr
+MOTEUR:1.5c.c
+
+
+----
+lang=cat
+TRACCIÓ:
+lang=es
+TRACCION:
+lang=en
+TRACTION:
+lang=fr
+TRACTION:
+
+
+----
+lang=cat
+CANVI:Manual
+lang=es
+CAMBIO:Manual
+lang=en
+GEARSHIFT:Manual
+lang=fr
+CHANGE:Manual
+
+
+----
+lang=cat
+PORTES:5
+lang=es
+PUERTAS:5
+lang=en
+DOORS:5
+lang=fr
+PORTES:5
+
+
+
+----
+lang=cat
+COMENTARIS:
+lang=es
+COMENTARIOS:
+lang=en
+COMMENTS:
+lang=fr
+COMMENTAIRES:
+
+
+----
+lang=cat
+EXTERIOR:Blau
+lang=es
+EXTERIOR:Azul
+lang=en
+EXTERIOR:Blue
+lang=fr
+EXTERIEUR:Bleu
+
+
+----
+lang=cat
+LOCALITZACIÓ:
+lang=es
+LOCALIZACION:
+lang=en
+LOCATION:
+lang=fr
+LOCALISATION:
+
+
+----
+lang=cat
+REFERÈNCIA:
+lang=es
+REFEREINCIA:
+lang=en
+REFERENCE:
+lang=fr
+REFERÈNCE:
+
+
+

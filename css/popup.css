@@ -1,0 +1,184 @@
+.product-popup{
+	position: fixed; 
+	overflow: scroll; 
+	z-index: 1000;
+
+	width: 90%;
+	height:90%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top:0;
+	margin: auto;
+	background-color: white;
+	box-shadow: black 0 0 50px , red 0 0 20px, yellow 0 0 30px ;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: rgba(100,100,100,.5);
+	border-style: solid;
+}
+
+
+
+.images-container{
+	background-color: rgba(0,0,0,.0);
+}
+
+.main-image{
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.main-image{
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top:0;
+	margin: auto;
+
+}
+
+.main-image-container{
+	position: relative;
+	min-height: 500px;
+	background-color: gray;
+
+}
+
+.popup-arrow{
+	position: absolute;
+	background-color: rgba(0,0,0,.0);
+	cursor: pointer;
+	z-index: 2000;
+	height: 1em;
+	font-size: 5em;
+	vertical-align: middle;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+
+
+.popup-left-arrow{
+	
+	left: 0;
+
+}
+.popup-arrow:hover{
+	background-color: rgba(0,0,0,.3);
+}
+
+.popup-right-arrow{
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.popup-thumbnail{
+	cursor: pointer;
+	width: 64px;
+	padding: 4px;
+	background-color: rgba(100, 100, 100, .0);
+	margin:0;
+
+	display: inline-block;
+	vertical-align: middle;
+	opacity: .4;
+}
+
+
+.popup-thumbnail:hover{
+	background-color: rgba(100, 100, 100, .3);
+	opacity: 1;
+}
+
+
+.image-thumbnails-container{
+	background-color: none;
+	/*box-shadow: black 0 0 10px;*/
+	margin-top: 1em;
+	border-top-style: solid;
+	border-top-color: red;
+	border-top-width: 1px;
+}
+
+
+
+
+
+
+
+
+
+/*.popup-close-button{
+	position: fixed; 
+	top:2.5%; 
+	right: 3%;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	border-style: solid;
+	z-index: 2000;
+	color: rgb(255,100,100);
+	border-color: rgb(255,100,100);
+	border-width: 2px;
+	background-color: black;
+}*/
+.popup-close-button{
+	position: fixed; 
+	top:5%; 
+	right: 5%;
+	width: 50px;
+	height: 50px;
+	border-radius: 15px;
+	border-style: solid;
+	z-index: 2000;
+	color:black;
+	border-color: rgba(100,100,100,.5);
+	border-width: 2px;
+	background-color: none;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	font-size: 2em;
+}
+
+
+
+
+
+
+.text-container{
+	background-color: none;
+	
+}
+.text-container p{
+
+
+}
+
+.price{
+	font-size: 2em;
+	color: red;
+	text-align: center;
+	border-radius: 5px;
+	width: 20%;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
