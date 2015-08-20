@@ -1,0 +1,233 @@
+----
+lang=cat
+PREU:
+lang=es
+PRECIO:
+lang=en
+PRICE:
+lang=fr
+PRIX:
+
+
+
+----
+lang=cat
+KM:4.400
+lang=es
+KM:4.400
+lang=en
+KM:4.400
+lang=fr
+KM:4.400
+
+
+----
+lang=cat
+INTERIOR:Negre cuir
+lang=es
+INTERIOR:Negro Cuero
+lang=en
+INTERIOR:Black Leather
+lang=fr
+INTERIEUR:Noir cuir
+
+
+----
+lang=cat
+ESTAT:Semi nou
+lang=es
+ESTADO:Semi nuevo
+lang=en
+STATE:Preowned
+lang=fr
+ÉTAT:Preowned
+
+
+----
+lang=cat
+ANY FABRICACIÓ:2014
+lang=es
+AÑO DE FABRICACIÓN:2014
+lang=en
+YEAR OF FABRICATION:2014
+lang=fr
+ANNÉE DE FABRICATION:2014
+
+
+----
+lang=cat
+TIPUS:Turisme 4x4
+lang=es
+TIPO:Turismo 4x4
+lang=en
+TYPE:Tourism 4x4
+lang=fr
+TYPE:Tourisme 4x4
+
+
+----
+lang=cat
+PRIMERA MATRICULACIÓ:09/2014
+lang=es
+PRIMERA MATRICULACIÓN:09/2014
+lang=en
+FIRST MATRICULATION:09/2014
+lang=fr
+PREMIÈRE IMMATRICULATION:09/2014
+
+
+----
+lang=cat
+MARCA:MINI
+lang=es
+MARCA:MINI
+lang=en
+BRAND:MINI
+lang=fr
+MARQUE:MINI
+
+
+----
+lang=cat
+PROPERA ITV:
+lang=es
+PRÓXIMA ITV:
+lang=en
+NEXT REVISION:
+lang=fr
+PROCHAINE REVISION:
+
+
+----
+lang=cat
+MODEL:COUNTRYMAN ALL4 S
+lang=es
+MODELO:COUNTRYMAN ALL4 S
+lang=en
+MODEL:COUNTRYMAN ALL4 S
+lang=fr
+MODÈLE:COUNTRYMAN ALL4 S
+
+
+----
+lang=cat
+DARRERA REVISIÓ:
+lang=es
+ULTIMA REVISIÓN:
+lang=en
+LAST REVISION:
+lang=fr
+DERNIÈRE REVISION:
+
+----
+lang=cat
+COMBUSTIBLE:Gasolina
+lang=es
+COMBUSTIBLE:Gasolina
+lang=en
+FUEL:Gasoline
+lang=fr
+COMBUSTIBLE:Essence
+
+
+----
+lang=cat
+PLACES:5
+lang=es
+PLAZAS:5
+lang=en
+SEATS:5
+lang=fr
+PLACES:5
+
+
+----
+lang=cat
+MOTOR:
+lang=es
+MOTOR:
+lang=en
+MOTOR:
+lang=fr
+MOTEUR:
+
+
+----
+lang=cat
+TRACCIÓ:4x4
+lang=es
+TRACCION:4x4
+lang=en
+TRACTION:4x4
+lang=fr
+TRACTION:4x4
+
+
+----
+lang=cat
+CANVI:Manual
+lang=es
+CAMBIO:Manual
+lang=en
+GEARSHIFT:Manual
+lang=fr
+CHANGE:Manuel
+
+
+----
+lang=cat
+PORTES:5
+lang=es
+PUERTAS:5
+lang=en
+DOORS:5
+lang=fr
+PORTES:5
+
+
+
+----
+lang=cat
+COMENTARIS:
+lang=es
+COMENTARIOS:
+lang=en
+COMMENTS:
+lang=fr
+COMMENTAIRES:
+
+
+----
+lang=cat
+EXTERIOR:Verd
+lang=es
+EXTERIOR:Verde
+lang=en
+EXTERIOR:Green
+lang=fr
+EXTERIEUR:Vert
+
+
+----
+lang=cat
+LOCALITZACIÓ:
+lang=es
+LOCALIZACION:
+lang=en
+LOCATION:
+lang=fr
+LOCALISATION:
+
+
+----
+lang=cat
+REFERÈNCIA:
+lang=es
+REFEREINCIA:
+lang=en
+REFERENCE:
+lang=fr
+REFERÈNCE:
+
+
+
