@@ -38,8 +38,10 @@ var app = angular.module('GIEMCars',[]);
 app.controller("carList",function($scope){
 	$scope.products = products; 
 	// $scope.initSwiper = initSwiper;
+	$scope.al = al;
+	$scope.alLang = al.getLanguage();
 	$scope.initAwesomeLanguage = function(){
-		al.update();
+		$scope.al.update();
 	}
 	$scope.getKeyFromPropertyObject = function(prop){
 		for (var key in prop){

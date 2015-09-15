@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="GIEMCars" ng-controller="carList" >
+<html lang="cat" ng-app="GIEMCars" ng-controller="carList" >
 
 <head>
 
@@ -121,14 +121,17 @@
                                         <!-- FOR LOOP FOR PROPERTIES -->
                                         <ul ng-repeat=" prop in product.data"  ng-if="propertyIsNotEmpty(prop)" class="col-md-4 col-sm-12 list-group" >
                                             <li class="list-group-item list-group-item-danger" >
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' >{{getKeyFromPropertyObject(langProp)}}</span>
+                                                <!-- <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' >{{getKeyFromPropertyObject(langProp)}}</span> -->
+                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' ng-if="lan==alLang" >{{getKeyFromPropertyObject(langProp)}}</span>
                                             </li>
                                             <li class="list-group-item">
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}'>{{getValueFromPropertyObject(langProp)}}</span>
+                                                <!-- <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}'>{{getValueFromPropertyObject(langProp)}}</span> -->
+                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' ng-if="lan==alLang">{{getValueFromPropertyObject(langProp)}}</span>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
+                                {{toggleAllNodes()}}
                                 
                                 
 

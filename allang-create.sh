@@ -29,6 +29,8 @@ for lang in ${LANGUAGE_LIST[@]}; do
 
 		sed -i.bak -e "s/al-lang-href/href/"  "$lang/$html" 
 
+		sed -i.bak -e "s/<html/& lang=\"$lang\"/"  "$lang/$html" 
+
 		
 		for dep in ${DEPENDENCIES[@]}; do
 			sed -i.bak -e "s:=\"$dep:=\"../$dep:" "$lang/$html"
