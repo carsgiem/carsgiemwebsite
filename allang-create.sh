@@ -4,7 +4,7 @@
 
 LANGUAGE_LIST=(en es cat fr)
 
-DEPENDENCIES=("db\/" "js\/" "css\/" "swipe\/" "images\/")
+DEPENDENCIES=("db\/" "js\/" "css\/" "swiper\/" "images\/" "font-awesome-4.4.0")
 
 
 for lang in ${LANGUAGE_LIST[@]}; do
