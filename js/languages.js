@@ -170,9 +170,9 @@ function AwesomeLanguage(){
 		else if (htmlLang){
 			return htmlLang;
 		} 
-		else if (navLang) {
-			return navLang;
-		}
+		// else if (navLang) {
+		// 	return navLang;
+		// }
 		else{
 			return this.DEFAULT_LANGUAGE;
 		}
