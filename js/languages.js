@@ -203,7 +203,9 @@ var al = new AwesomeLanguage();
 
 document.onreadystatechange = function () {
   	if (document.readyState == "complete") {
+  		al.setLanguage(al.getLanguage());
     	al.update();
+    	all.toggleAllNodes();
   		}
 	}
 
