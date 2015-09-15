@@ -59,7 +59,7 @@
             
                 <h2 class="page-header">
 
-                    <span class="al-lang-item" >Els nostres cotxes</span>
+                    <span class="" >Els nostres cotxes</span>
 
 
                     
@@ -83,7 +83,7 @@
                             <button onclick="initSwiperFromBtn(this);" data-toggle="modal" data-target='#{{"CGIEM-product-"+$index}}' class="btn btn-default pull-right">
                                 <i class="fa fa-plus" ></i>
 
-                                <span class="al-lang-item" >Més</span>
+                                <span class="" >Més</span>
 
 
                             </button>
@@ -121,10 +121,10 @@
                                         <!-- FOR LOOP FOR PROPERTIES -->
                                         <ul ng-repeat=" prop in product.data"  ng-if="propertyIsNotEmpty(prop)" class="col-md-4 col-sm-12 list-group" >
                                             <li class="list-group-item list-group-item-danger" >
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang='{{lan}}' >{{getKeyFromPropertyObject(langProp)}}</span>
+                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' >{{getKeyFromPropertyObject(langProp)}}</span>
                                             </li>
                                             <li class="list-group-item">
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang='{{lan}}'>{{getValueFromPropertyObject(langProp)}}</span>
+                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}'>{{getValueFromPropertyObject(langProp)}}</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -135,13 +135,13 @@
                                 <div class="modal-footer">
                                     <a href="mailto:carsgiem@gmail.com" class="btn btn-default"><i class="fa fa-envelope"></i> 
 
-                                        <span class="al-lang-item" >Contacteu-nos!</span>
+                                        <span class="" >Contacteu-nos!</span>
 
 
                                     </a>
                                     <button class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> 
 
-                                        <span class="al-lang-item" >Tancar</span>
+                                        <span class="" >Tancar</span>
 
 
                                     </button>

@@ -23,7 +23,8 @@ for lang in ${LANGUAGE_LIST[@]}; do
 		echo -e "\033[7;49;92m Analysing file $html for language $lang \033[0m"
 
 		sed -i.bak -e "s/al-lang=\"$lang\"//"  "$lang/$html" 
-		sed -i.bak -e "s/^.*al-lang=\"*\".*$//"  "$lang/$html" 
+		sed -i.bak -e "s/^.*al-lang=\"*\".*$//"  "$lang/$html"  
+		sed -i.bak -e "s/al-lang-item//"  "$lang/$html" 
 		
 		for dep in ${DEPENDENCIES[@]}; do
 			sed -i.bak -e "s:=\"$dep:=\"../$dep:" "$lang/$html"
