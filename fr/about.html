@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es"   >
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cars GIEM és una empresa dedicada al sector de l'automòbil, situada a Andorra, el País dels Pirineus. Tenim una àmplia experiència tant en el sector de l’automòbil com en el de la importació/exportació de mercaderies a escala nacional i internacional, amb la qual intentem sempre oferir la millor qualitat i atenció tant al client com als nostres productes.">
+    <meta name="author" content="Alejandro Gallo">
+    <meta keywords="Cars, Kars, Andorra, coches, cotxes, voitures, ocasió, ocasión, second hand">
+
+
+    <title>Cars GIEM</title>
+
+    <!-- Bootstrap Core CSS --><!-- 
+    <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="swiper/css/swiper.min.css">
+ -->    
+    <!-- Language Awesome -->
+    <link rel="stylesheet" href="../css/language-awesome.css">
+    <link rel="stylesheet" href="../css/about.css">
+
+
+    
+
+
+
+</head>
+
+<body  ng-app="GIEMCars" ng-controller="carList">
+    <!-- OVERLAY BEGIN -->
+    <div id="overlay" style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;" >
+        <span class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;"></span>
+    </div>
+    <!-- OVERLAY END -->
+    
+    <div ng-include="'navigation.html'"></div>
+    
+
+
+
+
+
+
+
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+            <!-- ANGULAR APP GIEMCars -->
+                <h1 class="page-header">
+
+
+                    <span class="al-lang-item" >Sur nous</span>
+
+                </h1>
+                
+                
+
+                <div class="jumbotron" style="position:relative; overflow: hidden;">
+                    <span class="glyphicon glyphicon-cog fa-spin-slower" id="spinning-wheel-about-us" ></span>
+                    <h2 id="about-us-jumbotron" class="container">
+
+                            Cars GIEM és una empresa dedicada al sector de l'automòbil, situada a Andorra, el País dels Pirineus. <br><br>
+
+                            Tenim una àmplia experiència tant en el sector de l’automòbil com en el de la importació/exportació de mercaderies a escala nacional i internacional, amb la qual intentem sempre oferir la millor qualitat i atenció tant al client com als nostres productes. <br><br>
+
+                            Si el que busqueu són vehicles fiables amb perfectes condicions i un bon servei al client nosaltres som la seva empresa.
+                        </p>
+
+                        
+                        
+
+                            Cars GIEM es una empresa dedicada al sector del automóvil, situada en Andorra, el pais de los Pirineos. <br><br>
+
+                            Tenemos una amplia experiencia tanto en el sector del automóvil como en el de la importación/exportación de mercaderías a nivel nacional e internacional, con la cual intentamos siempre ofrecer la mejor calidad i atencion tanto al cliente como a nuestros productos. <br><br>
+
+                            Si lo que busca son vehículos fiables en perfectas condiciones y un buen servicio al cliente nosotros somos su empresa.
+                        </p>
+
+                       
+                        
+
+                            Cars GIEM is an enterprise commited to the automobile industry, located in Andorra, the country of Pyrenees. <br><br>
+
+                            We have a wide experience in the automobile industry and the import and export of goods at national and international level. With this experience we allways try to give the best quality and attention to our clients and products. <br><br>
+
+                            If you are looking for a reliable cars with excellent conditions and a good client service, we are your enterprise.
+                        </p>
+
+
+                        <p class="al-lang-item" >
+                            Cars GIEM is an enterprise commited to the automobile industry, located in Andorra, the country of Pyrenees. <br><br>
+
+                            We have a wide experience in the automobile industry and the import and export of goods at national and international level. With this experience we allways try to give the best quality and attention to our clients and products. <br><br>
+
+                            If you are looking for a reliable cars with excellent conditions and a good client service, we are your enterprise.
+                        </p>
+                    </h2>
+                </div>
+                
+
+
+    </div>
+    
+    <!-- /.container -->
+
+
+    <div id="pepe"></div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="center-block row footer" ng-include="'footer.html'"></footer>
+ 
+    
+    
+
+
+
+    
+    <script type="text/javascript" src="../js/htmlLoadCover.js"></script>
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Swiper JS -->
+    <!--<script type="text/javascript" src="swiper/js/swiper.min.js"></script>-->
+    <!-- angular -->
+    <script class="wait-to-be-loaded" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../db/db.js"></script>
+    <script type="text/javascript" src="../js/appAngular.js"></script>
+
+ 
+    <script type="text/javascript"  src="../js/languages.js"></script>
+
+    
+
+
+</body>
+
+</html>
