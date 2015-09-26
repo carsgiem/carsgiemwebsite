@@ -170,9 +170,9 @@ var products = [
 	}
 	],
 'images':[
-	'/db/miniCooper5/images/1.jpg',
-	'/db/miniCooper5/images/20_mini-5-puertas-dinamicas_1_2.jpg',
-	'/db/miniCooper5/images/22_mini-5-puertas-fotos-interior_1_1.jpg'
+	'db/miniCooper5/images/1.jpg',
+	'db/miniCooper5/images/20_mini-5-puertas-dinamicas_1_2.jpg',
+	'db/miniCooper5/images/22_mini-5-puertas-fotos-interior_1_1.jpg'
 ]}
 ,
 {'data':[
@@ -346,10 +346,10 @@ var products = [
 	}
 	],
 'images':[
-	'/db/miniCountrymanVerde/images/1.png',
-	'/db/miniCountrymanVerde/images/2.png',
-	'/db/miniCountrymanVerde/images/3.png',
-	'/db/miniCountrymanVerde/images/4.png'
+	'db/miniCountrymanVerde/images/1.png',
+	'db/miniCountrymanVerde/images/2.png',
+	'db/miniCountrymanVerde/images/3.png',
+	'db/miniCountrymanVerde/images/4.png'
 ]}
 ,
 ]

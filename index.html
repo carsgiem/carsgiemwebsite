@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="GIEMCars" ng-controller="carList" >
+<html  >
 
 <head>
     
@@ -16,22 +16,25 @@
     <meta name="description" class="al-lang-item" al-lang="es" content="Venta de coches de segunda mano de calidad importados desde Alemania, Audi, Mercedes, BMW, Volkswagen...">
     <meta name="description" class="al-lang-item" al-lang="fr" content="Vente de voitures de seconde main importés de l'Allemagne, Audi, Mercedes, BMW, Volkswagen...">
     <meta name="author" content="Alejandro Gallo">
-    <meta keywords="Cars, Kars, Andorra, coches, cotxes, voitures, ocasió, ocasión, second hand">
+    <meta al-lang="cat" lang="cat" keywords="CARS, GIEM, Kars, Andorra, cotxes, ocasió, Escaldes, Canillo, Ordino, Alemà, segona ma, qualitat, Audi, Mercedes, BMW, Mini, Cooper, Volkswagen, VW">
+    <meta al-lang="es" lang="es" keywords="CARS, GIEM, Kars, Andorra, coches, ocasión, Escaldes, Canillo, Ordino, Alemán, segunda mano, calidad, Audi, Mercedes, BMW, Mini, Cooper, Volkswagen, VW">
+    <meta al-lang="en" lang="en" keywords="CARS, GIEM, Kars, Andorra, cars, used, Escaldes, Canillo, Ordino, german, second hand, quality, Audi, Mercedes, BMW, Mini, Cooper, Volkswagen, VW">
+    <meta al-lang="fr" lang="fr" keywords="CARS, GIEM, Kars, Andorra, voitures, ocasion, Escaldes, Canillo, Ordino, allemand, seconde main, qualité, Audi, Mercedes, BMW, Mini, Cooper, Volkswagen, VW">
 
     <title>Cars GIEM</title>
     
-    <!-- Bootstrap Core CSS --><!-- 
-    <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/Swiper/dist/css/swiper.min.css">
     <!-- Language Awesome -->
     <link rel="stylesheet" href="css/language-awesome.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
 
 
 
@@ -41,14 +44,17 @@
 
 </head>
 
-<body >
+<body ng-app="GIEMCars" ng-controller="carList">
     
-    <script class="al-lang-item" al-lang="disappear" type="text/javascript">window.location="cat/index.html"</script>
+    <script class="al-lang-item" al-lang="disappear" type="text/javascript">
+        window.location="cat/index.html"
+    </script>
 
 
     <!-- OVERLAY BEGIN -->
-    <div  id="overlay" style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;" >
-        <span ondrag="console.log('hi')"  class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;"></span>
+    <div  id="overlay" 
+    style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;" >
+        <span  class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;"></span>
     </div>
     <!-- OVERLAY -->
     
@@ -119,7 +125,7 @@
                                         <div id="{{'CGIEM-swiper-container-product-'+$index}}" class="col-sm-12 col-md-8 swiper-container">
                                             <div class="swiper-wrapper">
                                                 <!-- FOR LOOP FOR IMAGES -->
-                                                <div ng-repeat="img in product.images" class="swiper-slide swiper-slide-modal" style="background-image: url({{img}})" > 
+                                                <div ng-repeat="img in product.images" class="swiper-slide swiper-slide-modal" style="background-image: url('{{img}}')" > 
                                                 </div>
                                                 
                                             </div>
@@ -133,12 +139,17 @@
                                         <!-- FOR LOOP FOR PROPERTIES -->
                                         <ul ng-repeat=" prop in product.data"  ng-if="propertyIsNotEmpty(prop)" class="col-md-4 col-sm-12 list-group" >
                                             <li class="list-group-item list-group-item-danger" >
-                                                <!-- <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang='{{lan}}' >{{getKeyFromPropertyObject(langProp)}}</span> -->
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang='{{lan}}' ng-if="lan==alLang" >{{getKeyFromPropertyObject(langProp)}}</span>
+                                                <!-- PROPERTY -->
+                                                <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang="{{lan}}" ng-if="lan==alLang" >
+                                                    <!-- Do not change ng-if, important for compiling all-lang.py -->
+                                                    {{getKeyFromPropertyObject(langProp)}}
+                                                </span>
                                             </li>
                                             <li class="list-group-item">
-                                                <!-- <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang='{{lan}}'>{{getValueFromPropertyObject(langProp)}}</span> -->
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang='{{lan}}' ng-if="lan==alLang">{{getValueFromPropertyObject(langProp)}}</span>
+                                                <!-- VALUE -->
+                                                <span ng-repeat="(lan, langProp) in prop.lang" class="al-lang-item" al-lang="{{lan}}" ng-if="lan==alLang">
+                                                    {{getValueFromPropertyObject(langProp)}}
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>
@@ -207,12 +218,11 @@
 
     
     <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
     
     <!-- Swiper JS -->
-    <script class="wait-to-be-loaded" type="text/javascript" src="swiper/js/swiper.min.js"></script>
+    <script class="wait-to-be-loaded" type="text/javascript" src="bower_components/Swiper/dist/js/swiper.min.js"></script>
     <!-- angular -->
     <script class="wait-to-be-loaded" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     

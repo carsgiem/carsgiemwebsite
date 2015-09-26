@@ -1,177 +1,110 @@
 <!DOCTYPE html>
-<html lang="cat" >
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="alternate" href="http://www.carsgiem.com/cat/" hreflang="x-default">
-    <link rel="alternate" href="http://www.carsgiem.com/es/" hreflang="es">
-    <link rel="alternate" href="http://www.carsgiem.com/fr/" hreflang="fr">
-    <link rel="alternate" href="http://www.carsgiem.com/en/" hreflang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" class=""  content="Venta de cotxes de segona mà a Andorra de qualitat importats d'Alemanya, Audi, Mercedes, BMW, Volkswagen...">
-
-
-
-    <meta name="author" content="Alejandro Gallo">
-    <meta keywords="Cars, Kars, Andorra, coches, cotxes, voitures, ocasió, ocasión, second hand">
-
-    <title>Cars GIEM</title>
-
-    <!-- Bootstrap Core CSS --><!-- 
-    <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="../css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-
-    <link rel="stylesheet" type="text/css" href="../font-awesome-4.4.0/css/font-awesome.min.css">
-    <!-- Link Swiper's CSS -->
-    <!-- <link rel="stylesheet" href="../swiper/css/swiper.min.css">
- -->    
-    <!-- Language Awesome -->
-    <link rel="stylesheet" href="../css/language-awesome.css">
-    <link rel="stylesheet" type="text/css" href="../css/contact.css">
-
-
-    
-
-
-
-</head>
-
-<body  ng-app="GIEMCars" ng-controller="carList">
-    <!-- OVERLAY BEGIN -->
-    <div id="overlay" style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;" >
-        <span class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;"></span>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="alternate" href="http://www.carsgiem.com/cat/" hreflang="x-default" />
+  <link rel="alternate" href="http://www.carsgiem.com/es/" hreflang="es" />
+  <link rel="alternate" href="http://www.carsgiem.com/fr/" hreflang="fr" />
+  <link rel="alternate" href="http://www.carsgiem.com/en/" hreflang="en" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" class="" content="Venta de cotxes de segona mà a Andorra de qualitat importats d'Alemanya, Audi, Mercedes, BMW, Volkswagen..." />
+  <meta name="author" content="Alejandro Gallo" />
+  <meta keywords="Cars, Kars, Andorra, coches, cotxes, voitures, ocasió, ocasión, second hand" />
+  <title>
+   Cars GIEM
+  </title>
+  <!-- Bootstrap Core CSS -->
+  <!-- 
+    &lt;link href="../css/bootstrap.min.css" rel="stylesheet"&gt; -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/flag-icon.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../bower_components/Swiper/dist/css/swiper.min.css" />
+  <!-- Language Awesome -->
+  <link rel="stylesheet" href="../css/language-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+  <link rel="stylesheet" type="text/css" href="../bower_components/animate.css/animate.min.css" />
+ </head>
+ <body ng-app="GIEMCars">
+  <!-- OVERLAY BEGIN -->
+  <div id="overlay" style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;">
+   <span class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;">
+   </span>
+  </div>
+  <!-- OVERLAY END -->
+  <div ng-include="'navigation.html'">
+  </div>
+  <!-- Page Content -->
+  <div class="container center-block ">
+   <!-- ANGULAR APP GIEMCars -->
+   <h1 class="page-header">
+    <span class="">
+     Contacte
+    </span>
+   </h1>
+   <style type="text/css">
+   </style>
+   <div id="contact-menu" class="container center-block row">
+    <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
+     <a href="tel:+376329299">
+      <i class="fa fa-whatsapp contact-icon" style="color:#4dc247" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="+376 329 299">
+      </i>
+     </a>
     </div>
-    <!-- OVERLAY END -->
-    
-    <div ng-include="'navigation.html'"></div>
-    
-
-
-
-
-
-
-
-
-
-    <!-- Page Content -->
-    <div class="container center-block ">
-
-            <!-- ANGULAR APP GIEMCars -->
-                <h1 class="page-header">
-
-                    <span class="" >Contacte</span>
-
-
-                </h1>
-                
-                <style type="text/css">
-                    
-
-                </style>
-
-        
-        
-        <div id="contact-menu" class="container center-block row">
-            <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
-                <a href="tel:+376329299" >
-                    <i class="fa fa-whatsapp contact-icon" style="color:#4dc247" data-toggle="popover" data-trigger="hover" data-placement="bottom"  data-content="+376 329 299"></i>
-                </a>
-            </div>
-            <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
-                <a href="mailto:carsgiem@gmail.com">
-                    <i class="fa fa-envelope contact-icon" data-toggle="popover" data-trigger="hover" data-placement="bottom"  data-content="carsgiem@gmail.com"></i>
-                </a>
-            </div>
-            <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
-                <a href="https://www.facebook.com/carsgiem" target="_blank">
-                    <i class="fa fa-facebook contact-icon" style="color:#3b5998"></i>
-                </a>
-            </div>
-            <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
-                <a href="tel:+376807255">
-                    <i class="fa fa-phone-square contact-icon" data-toggle="popover" data-trigger="hover" data-placement="bottom"  data-content="+376 807 255"></i>
-                </a>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 row text-center contact-icon-container" >
-                <i class="fa fa-map-marker contact-icon col-xs-12"></i>
-                <!-- Google Maps Code Kopieren -->
-                <iframe class="col-xs-12 center-block google-map" height="500px"
-                src="https://maps.google.de/maps?hl=es&q=Nissan Andorra+(Nissan)&ie=UTF8&t=&z=17&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
-            </div>
-        </div>
-
-                
-
-
+    <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
+     <a href="mailto:carsgiem@gmail.com">
+      <i class="fa fa-envelope contact-icon" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="carsgiem@gmail.com">
+      </i>
+     </a>
     </div>
-    
-    <!-- /.container -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class= "row footer" ng-include="'footer.html'"></footer>
- 
-    
-    
-
-
-
-    
-    <script type="text/javascript" src="../js/htmlLoadCover.js"></script>
-
-    <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-
-    <!-- angular -->
-    <script class="wait-to-be-loaded" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-
-
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="../db/db.js"></script>
-    <script type="text/javascript" src="../js/appAngular.js"></script>
-
- 
-    <script type="text/javascript"  src="../js/languages.js"></script>
-
-
-
-    <script type="text/javascript">
-    $(function () {
+    <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
+     <a href="https://www.facebook.com/carsgiem" target="_blank">
+      <i class="fa fa-facebook contact-icon" style="color:#3b5998">
+      </i>
+     </a>
+    </div>
+    <div class="col-xs-6 col-sm-3 text-center contact-icon-container">
+     <a href="tel:+376807255">
+      <i class="fa fa-phone-square contact-icon" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="+376 807 255">
+      </i>
+     </a>
+    </div>
+    <div class="col-xs-12 col-sm-12 row text-center contact-icon-container">
+     <i class="fa fa-map-marker contact-icon col-xs-12">
+     </i>
+     <!-- Google Maps Code Kopieren -->
+     <iframe class="col-xs-12 center-block google-map" height="500px" src="https://maps.google.de/maps?hl=es&amp;q=Nissan Andorra+(Nissan)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+     </iframe>
+    </div>
+   </div>
+  </div>
+  <!-- /.container -->
+  <footer class="row footer" ng-include="'footer.html'">
+  </footer>
+  <script type="text/javascript" src="../js/htmlLoadCover.js">
+  </script>
+  <!-- jQuery -->
+  <script src="../bower_components/jquery/dist/jquery.min.js">
+  </script>
+  <!-- Swiper JS -->
+  <script class="wait-to-be-loaded" type="text/javascript" src="../bower_components/Swiper/dist/js/swiper.min.js">
+  </script>
+  <!-- angular -->
+  <script class="wait-to-be-loaded" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js">
+  </script>
+  <script class="wait-to-be-loaded" type="text/javascript" src="../js/appAngular.js">
+  </script>
+  <!-- Bootstrap Core JavaScript -->
+  <script class="wait-to-be-loaded" type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  <script type="text/javascript" src="../js/languages.js">
+  </script>
+  <script type="text/javascript">
+   $(function () {
         $('[data-toggle="popover"]').popover();
     })
-</script>
-
-    
-</body>
-
+  </script>
+ </body>
 </html>

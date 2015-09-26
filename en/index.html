@@ -1,234 +1,174 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="GIEMCars" ng-controller="carList" >
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="alternate" href="http://www.carsgiem.com/cat/" hreflang="x-default">
-    <link rel="alternate" href="http://www.carsgiem.com/es/" hreflang="es">
-    <link rel="alternate" href="http://www.carsgiem.com/fr/" hreflang="fr">
-    <link rel="alternate" href="http://www.carsgiem.com/en/" hreflang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" class=""  content="Second hand car sales in Andorra. High quality cars from Germany, Audi, Mercedes, BMW, Volkswagen...">
-
-
-    <meta name="author" content="Alejandro Gallo">
-    <meta keywords="Cars, Kars, Andorra, coches, cotxes, voitures, ocasió, ocasión, second hand">
-
-    <title>Cars GIEM</title>
-    
-    <!-- Bootstrap Core CSS --><!-- 
-    <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="../css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-
-    <link rel="stylesheet" type="text/css" href="../font-awesome-4.4.0/css/font-awesome.min.css">
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="../swiper/css/swiper.min.css">
-    <!-- Language Awesome -->
-    <link rel="stylesheet" href="../css/language-awesome.css">
-
-
-
-    
-
-
-
-</head>
-
-<body >
-    <!-- OVERLAY BEGIN -->
-    <div  id="overlay" style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;" >
-        <span ondrag="console.log('hi')"  class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;"></span>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="alternate" href="http://www.carsgiem.com/cat/" hreflang="x-default" />
+  <link rel="alternate" href="http://www.carsgiem.com/es/" hreflang="es" />
+  <link rel="alternate" href="http://www.carsgiem.com/fr/" hreflang="fr" />
+  <link rel="alternate" href="http://www.carsgiem.com/en/" hreflang="en" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" class="" content="Second hand car sales in Andorra. High quality cars from Germany, Audi, Mercedes, BMW, Volkswagen..." />
+  <meta name="author" content="Alejandro Gallo" />
+  <meta lang="en" keywords="CARS, GIEM, Kars, Andorra, cars, used, Escaldes, Canillo, Ordino, german, second hand, quality, Audi, Mercedes, BMW, Mini, Cooper, Volkswagen, VW" />
+  <title>
+   Cars GIEM
+  </title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/flag-icon.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../bower_components/Swiper/dist/css/swiper.min.css" />
+  <!-- Language Awesome -->
+  <link rel="stylesheet" href="../css/language-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../bower_components/animate.css/animate.min.css" />
+ </head>
+ <body ng-app="GIEMCars" ng-controller="carList">
+  <!-- OVERLAY BEGIN -->
+  <div id="overlay" style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;">
+   <span class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;">
+   </span>
+  </div>
+  <!-- OVERLAY -->
+  <div ng-include="'navigation.html'">
+  </div>
+  <!-- Page Content -->
+  <div class="container row center-block">
+   <!-- ANGULAR APP GIEMCars -->
+   <h2 class="page-header">
+    <span class="">
+     Our cars
+    </span>
+   </h2>
+   <!-- FOR LOOP FOR PRODUCTS -->
+   <div class="col-md-4 col-xs-12" ng-repeat="product in products">
+    <!-- PANEL PRODUCT -->
+    <div class="panel panel-default">
+     <!-- PANEL BODY -->
+     <div class="panel-body" style="padding:0">
+      <div class="item-image" style="background-image:url('../{{product.images[0]}}');">
+      </div>
+     </div>
+     <!-- PANEL FOOTER -->
+     <div class="panel-footer clearfix">
+      <div class="label-group pull-left" style="width:50%; ">
+       <span class="label label-primary" style="overflow: hidden; text-overflow: ellipsis;">
+        {{getBrand(product)}}
+       </span>
+       <span class="label label-default" style="overflow: hidden; text-overflow: ellipsis;">
+        {{getModel(product)}}
+       </span>
+       <span class="label label-danger" style="overflow: hidden; text-overflow: ellipsis;">
+        {{getPrice(product)}}
+        <i class="fa fa-eur">
+        </i>
+       </span>
+      </div>
+      <button onclick="initSwiperFromBtn(this);" data-toggle="modal" data-target='#{{"CGIEM-product-"+$index}}' class="btn btn-default pull-right">
+       <i class="fa fa-plus">
+       </i>
+       <span class="">
+        More
+       </span>
+      </button>
+     </div>
     </div>
-    <!-- OVERLAY -->
-    
-    <div ng-include="'navigation.html'"></div>
-    
-
-
-
-
-
-
-
-
-
-    <!-- Page Content -->
-    <div class="container row center-block">
-
-
-            <!-- ANGULAR APP GIEMCars -->
-            
-                <h2 class="page-header">
-
-
-
-                    <span class="" >Our cars</span>
-                    
-                </h2>
-                
-                <!-- FOR LOOP FOR PRODUCTS -->
-                <div class="col-md-4 col-xs-12" ng-repeat="product in products" >
-                    <!-- PANEL PRODUCT -->
-                    <div class="panel panel-default">
-                        <!-- PANEL BODY -->
-                        <div class="panel-body" style="padding:0">
-                            <div class="item-image" style="background-image: url('{{product.images[0]}}');" ></div>
-                        </div>
-                        <!-- PANEL FOOTER -->
-                        <div class="panel-footer clearfix" >
-                            <div class="label-group pull-left" style="width:50%; ">
-                                <span class="label label-primary" style="overflow: hidden; text-overflow: ellipsis;">{{getBrand(product)}} </span>
-                                <span class="label label-default" style="overflow: hidden; text-overflow: ellipsis;">{{getModel(product)}} </span>
-                                <span class="label label-danger" style="overflow: hidden; text-overflow: ellipsis;">{{getPrice(product)}} <i class="fa fa-eur"></i></span>
-                            </div>
-                            <button onclick="initSwiperFromBtn(this);" data-toggle="modal" data-target='#{{"CGIEM-product-"+$index}}' class="btn btn-default pull-right">
-                                <i class="fa fa-plus" ></i>
-
-
-
-                                <span class="" >More</span>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <!-- MODAL PRODUCT -->
-                    <div class="modal fade " id='{{"CGIEM-product-"+$index}}'>
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <!-- MODAL HEADER -->
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title">{{getModel(product)}}</h4>
-                                </div>
-                                
-                                <!-- MODAL BDODY -->
-                                <div class="modal-body ">
-                                        <!-- SWIPER -->
-                                    <div class="row center-block">
-                                        <div id="{{'CGIEM-swiper-container-product-'+$index}}" class="col-sm-12 col-md-8 swiper-container">
-                                            <div class="swiper-wrapper">
-                                                <!-- FOR LOOP FOR IMAGES -->
-                                                <div ng-repeat="img in product.images" class="swiper-slide swiper-slide-modal" style="background-image: url({{img}})" > 
-                                                </div>
-                                                
-                                            </div>
-                                            <!-- Add Pagination -->
-                                            <div id="{{'CGIEM-swiper-pagination-product-'+$index}}" class="swiper-pagination"></div>
-                                            <!-- Add Arrows -->
-                                            <div id="{{'CGIEM-swiper-button-next-product-'+$index}}" class="swiper-button-next"></div>
-                                            <div id="{{'CGIEM-swiper-button-prev-product-'+$index}}" class="swiper-button-prev"></div>
-                                        </div>
-                                        
-                                        <!-- FOR LOOP FOR PROPERTIES -->
-                                        <ul ng-repeat=" prop in product.data"  ng-if="propertyIsNotEmpty(prop)" class="col-md-4 col-sm-12 list-group" >
-                                            <li class="list-group-item list-group-item-danger" >
-                                                <!-- <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' >{{getKeyFromPropertyObject(langProp)}}</span> -->
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' ng-if="lan==alLang" >{{getKeyFromPropertyObject(langProp)}}</span>
-                                            </li>
-                                            <li class="list-group-item">
-                                                <!-- <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}'>{{getValueFromPropertyObject(langProp)}}</span> -->
-                                                <span ng-repeat="(lan, langProp) in prop.lang" class="" al-lang='{{lan}}' ng-if="lan==alLang">{{getValueFromPropertyObject(langProp)}}</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                {{toggleAllNodes()}}
-                                
-                                
-
-                                <div class="modal-footer">
-                                    <a href="mailto:carsgiem@gmail.com" class="btn btn-default"><i class="fa fa-envelope"></i> 
-
-
-
-                                        <span class="" >Contact us!</span>
-                                    </a>
-                                    <button class="btn btn-default" data-dismiss="modal"><i class="fa fa-close"></i> 
-
-
-
-                                        <span class="" >Close</span>
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-
-
-                
-  
+    <!-- MODAL PRODUCT -->
+    <div class="modal fade " id='{{"CGIEM-product-"+$index}}'>
+     <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+       <!-- MODAL HEADER -->
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">
+          &times;
+         </span>
+        </button>
+        <h4 class="modal-title">
+         {{getModel(product)}}
+        </h4>
+       </div>
+       <!-- MODAL BDODY -->
+       <div class="modal-body ">
+        <!-- SWIPER -->
+        <div class="row center-block">
+         <div id="{{'CGIEM-swiper-container-product-'+$index}}" class="col-sm-12 col-md-8 swiper-container">
+          <div class="swiper-wrapper">
+           <!-- FOR LOOP FOR IMAGES -->
+           <div ng-repeat="img in product.images" class="swiper-slide swiper-slide-modal" style="background-image:url('../{{img}}')">
+           </div>
+          </div>
+          <!-- Add Pagination -->
+          <div id="{{'CGIEM-swiper-pagination-product-'+$index}}" class="swiper-pagination">
+          </div>
+          <!-- Add Arrows -->
+          <div id="{{'CGIEM-swiper-button-next-product-'+$index}}" class="swiper-button-next">
+          </div>
+          <div id="{{'CGIEM-swiper-button-prev-product-'+$index}}" class="swiper-button-prev">
+          </div>
+         </div>
+         <!-- FOR LOOP FOR PROPERTIES -->
+         <ul ng-repeat=" prop in product.data" ng-if="propertyIsNotEmpty(prop)" class="col-md-4 col-sm-12 list-group">
+          <li class="list-group-item list-group-item-danger">
+           <!-- PROPERTY -->
+           <span ng-repeat="(lan, langProp) in prop.lang" class="" ng-if="lan=='en'">
+            <!-- Do not change ng-if, important for compiling all-lang.py -->
+            {{getKeyFromPropertyObject(langProp)}}
+           </span>
+          </li>
+          <li class="list-group-item">
+           <!-- VALUE -->
+           <span ng-repeat="(lan, langProp) in prop.lang" class="" ng-if="lan=='en'">
+            {{getValueFromPropertyObject(langProp)}}
+           </span>
+          </li>
+         </ul>
+        </div>
+       </div>
+       {{toggleAllNodes()}}
+       <div class="modal-footer">
+        <a href="mailto:carsgiem@gmail.com" class="btn btn-default">
+         <i class="fa fa-envelope">
+         </i>
+         <span class="">
+          Contact us!
+         </span>
+        </a>
+        <button class="btn btn-default" data-dismiss="modal">
+         <i class="fa fa-close">
+         </i>
+         <span class="">
+          Close
+         </span>
+        </button>
+       </div>
+      </div>
+     </div>
     </div>
-    <!-- /.container -->
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-    <footer class="center-block row footer" ng-include="'footer.html'"></footer>
- 
-    
-    
-    
-
-
-    <script type="text/javascript" src="../js/htmlLoadCover.js"></script>
-
-    
-    <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    
-    <!-- Swiper JS -->
-    <script class="wait-to-be-loaded" type="text/javascript" src="../swiper/js/swiper.min.js"></script>
-    <!-- angular -->
-    <script class="wait-to-be-loaded" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    
-    
-
-    <!-- Bootstrap Core JavaScript -->
-    <script class="wait-to-be-loaded" type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
- 
-    <script class="wait-to-be-loaded" type="text/javascript" src="../db/db.js"></script>
-    <script class="wait-to-be-loaded" type="text/javascript" src="../js/appAngular.js" ></script>
-
-
-    <script class="wait-to-be-loaded" type="text/javascript" src="../js/languages.js" ></script>
-
-
-
-
-
-
-
-</body>
-
+   </div>
+  </div>
+  <!-- /.container -->
+  <footer class="center-block row footer" ng-include="'footer.html'">
+  </footer>
+  <script type="text/javascript" src="../js/htmlLoadCover.js">
+  </script>
+  <!-- jQuery -->
+  <script src="../bower_components/jquery/dist/jquery.min.js">
+  </script>
+  <!-- Swiper JS -->
+  <script class="wait-to-be-loaded" type="text/javascript" src="../bower_components/Swiper/dist/js/swiper.min.js">
+  </script>
+  <!-- angular -->
+  <script class="wait-to-be-loaded" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js">
+  </script>
+  <!-- Bootstrap Core JavaScript -->
+  <script class="wait-to-be-loaded" type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  <script class="wait-to-be-loaded" type="text/javascript" src="../db/db.js">
+  </script>
+  <script class="wait-to-be-loaded" type="text/javascript" src="../js/appAngular.js">
+  </script>
+  <script class="wait-to-be-loaded" type="text/javascript" src="../js/languages.js">
+  </script>
+ </body>
 </html>

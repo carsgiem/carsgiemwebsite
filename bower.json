@@ -1,0 +1,21 @@
+{
+  "name": "Carsgiem Website",
+  "version": "0.1.0",
+  "homepage": "https://github.com/carsgiem/carsgiemwebsite",
+  "authors": [
+    "Alejandro <alejandroamsg@hotmail.com>"
+  ],
+  "description": "Carsgiem Website",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.6",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "animate.css": "~3.4.0",
+    "Swiper": "swiper#~3.1.2"
+  }
+}

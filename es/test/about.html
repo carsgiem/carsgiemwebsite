@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="alternate" href="http://www.carsgiem.com/cat/" hreflang="x-default" />
+  <link rel="alternate" href="http://www.carsgiem.com/es/" hreflang="es" />
+  <link rel="alternate" href="http://www.carsgiem.com/fr/" hreflang="fr" />
+  <link rel="alternate" href="http://www.carsgiem.com/en/" hreflang="en" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" class="" content="Venta de coches de segunda mano de calidad importados desde Alemania, Audi, Mercedes, BMW, Volkswagen..." />
+  <meta name="author" content="Alejandro Gallo" />
+  <meta keywords="Cars, Kars, Andorra, coches, cotxes, voitures, ocasió, ocasión, second hand" />
+  <title>
+   Cars GIEM
+  </title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/flag-icon.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../bower_components/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../bower_components/Swiper/dist/css/swiper.min.css" />
+  <!-- Language Awesome -->
+  <link rel="stylesheet" href="../css/language-awesome.css" />
+  <link rel="stylesheet" href="../css/about.css" />
+ </head>
+ <body ng-app="ng-app">
+  <!-- OVERLAY BEGIN -->
+  <div id="overlay" style="position:fixed;z-index:99999;top:0;left:0;bottom:0;right:0;background:rgba(0,0,0,0.99);transition: 1s 0.4s;">
+   <span class="glyphicon glyphicon-cog  fa-spin" id="spinner" style="position: absolute;top:0;left:0;bottom:0;right:0;margin: auto;height: 1em;color:red; width: 1em;font-size: 5em;">
+   </span>
+  </div>
+  <!-- OVERLAY END -->
+  <div ng-include="'navigation.html'">
+  </div>
+  <!-- Page Content -->
+  <div class="container">
+   <!-- ANGULAR APP GIEMCars -->
+   <h1 class="page-header">
+    <span class="">
+     Sobre nosotros
+    </span>
+   </h1>
+   <div class="jumbotron" style="position:relative; overflow: hidden;">
+    <span class="glyphicon glyphicon-cog fa-spin-slower" id="spinning-wheel-about-us">
+    </span>
+    <h2 id="about-us-jumbotron" class="container">
+    </h2>
+    <p class="">
+     Cars GIEM es una empresa dedicada al sector del automóvil, situada en Andorra, el pais de los Pirineos.
+     <br />
+     <br />
+     Tenemos una amplia experiencia tanto en el sector del automóvil como en el de la importación/exportación de mercaderías a nivel nacional e internacional, con la cual intentamos siempre ofrecer la mejor calidad i atencion tanto al cliente como a nuestros productos.
+     <br />
+     <br />
+     Si lo que busca son vehículos fiables en perfectas condiciones y un buen servicio al cliente nosotros somos su empresa.
+    </p>
+   </div>
+  </div>
+  <!-- /.container -->
+  <footer class="center-block row footer" ng-include="'footer.html'">
+  </footer>
+  <script type="text/javascript" src="../js/htmlLoadCover.js">
+  </script>
+  <!-- jQuery -->
+  <script src="../bower_components/jquery/dist/jquery.min.js">
+  </script>
+  <!-- Swiper JS -->
+  <script class="wait-to-be-loaded" type="text/javascript" src="../bower_components/Swiper/dist/js/swiper.min.js">
+  </script>
+  <!-- angular -->
+  <script class="wait-to-be-loaded" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js">
+  </script>
+  <!-- Bootstrap Core JavaScript -->
+  <script class="wait-to-be-loaded" type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+  <script type="text/javascript" src="../js/languages.js">
+  </script>
+ </body>
+</html>
