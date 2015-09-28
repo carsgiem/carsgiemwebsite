@@ -35,10 +35,10 @@ function initSwiperFromBtn(btn){
 
 
 var app = angular.module('GIEMCars',[]);
-app.controller("carList",function($scope){
-	$scope.products = products; 
+app.controller("carList",[ "$scope", "$http", function($scope, $http){
+	// $scope.products = products; 
 	// $scope.initSwiper = initSwiper;
-
+	$http.get("../db/cars.json").then(function(response){ $scope.products=response.data;},function(err){console.log("ERRROR"); throw err;});
 
 	$scope.al = al;
 	$scope.alLang = $scope.al.getLanguage();
@@ -103,7 +103,7 @@ app.controller("carList",function($scope){
 			}
 		}
 	};
-});
+}]);
 
 
 
